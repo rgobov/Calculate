@@ -1,5 +1,3 @@
-import java.security.PublicKey;
-import java.util.Objects;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -86,10 +84,10 @@ public class Main {
 
     public static void main(String[] args) throws NoSuchOperationException, StringMoreThen10, FirstStringMustBeString {
         Calculator calculator = new Calculator();
-        String inputSting = getString();
-        getChars(inputSting);
+        String inputString = getString();
+        getChars(inputString);
         getOperation();
-        getParts(inputSting);
+        getParts(inputString);
         IsDigit(firstPart);
 
         calculator.calculate(operation);
