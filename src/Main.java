@@ -57,7 +57,7 @@ public class Main {
         if (!isoperation) {
             throw new NoSuchOperationException("Нет допустимой операции");
         }
-        if (firstPart.length() + secondPart.length() > 20) {
+        if (firstPart.length() + secondPart.length() > 20) {git
             throw new StringMoreThen10("Длинна аргумента больше 10знаков");
         }
     }
