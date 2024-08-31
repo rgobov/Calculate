@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import java.security.PublicKey;
 import java.util.Objects;
+=======
+>>>>>>> secondvarint
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -67,7 +70,11 @@ public class Main {
         if (!isoperation) {
             throw new NoSuchOperationException("Нет допустимой операции");
         }
+<<<<<<< HEAD
         if (firstPart.length() + secondPart.length() > 20) {
+=======
+        if (firstPart.length() + secondPart.length() > 20) {git
+>>>>>>> secondvarint
             throw new StringMoreThen10("Длинна аргумента больше 10знаков");
         }
     }
@@ -86,10 +93,17 @@ public class Main {
 
     public static void main(String[] args) throws NoSuchOperationException, StringMoreThen10, FirstStringMustBeString {
         Calculator calculator = new Calculator();
+<<<<<<< HEAD
         String inputSting = getString();
         getChars(inputSting);
         getOperation();
         getParts(inputSting);
+=======
+        String inputString = getString();
+        getChars(inputString);
+        getOperation();
+        getParts(inputString);
+>>>>>>> secondvarint
         IsDigit(firstPart);
 
         calculator.calculate(operation);
